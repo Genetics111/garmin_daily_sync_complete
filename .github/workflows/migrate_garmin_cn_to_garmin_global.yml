@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-          cache: 'yarn'
+          #cache: 'yarn'
       - run: yarn
       - run: yarn migrate_garmin_cn_to_global
       - uses: stefanzweifel/git-auto-commit-action@v4

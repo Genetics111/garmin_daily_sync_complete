@@ -32,8 +32,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-         #不去掉缓存数据
-         cache: 'yarn'
+          #恢复数据缓存
+          cache: 'yarn'
       - run: yarn
       - run: yarn sync_cn
         timeout-minutes: 5
